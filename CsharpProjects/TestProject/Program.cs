@@ -42,11 +42,11 @@ class Calculator
 {
     public static double ExSolution(string expression)
     {
-        // 
-// remove white spaces
+        // Remove white spaces
         expression = expression.Replace(" ", "");
 
-
+        // Assessment of mathematical calculation
+        return Convert.ToDouble(new System.Data.DataTable().Compute(expression, ""));
     }
 }
 
