@@ -37,3 +37,16 @@ while(true) {
 
 }
 
+
+class Calculator
+{
+    public static double ExSolution(string expression)
+    {
+        // 
+// remove white spaces
+        expression = expression.Replace(" ", "");
+
+
+    }
+}
+
