@@ -13,12 +13,27 @@ static void Main(string[] args) {
 while(true) {
     string  input = Console.ReadLine(); 
 
+// User exit option
     if (input.ToLower() == "exit") {
         Console.WriteLine("Exiting the calculator");
         break;
     }
+
+// Calculation check and Mathematical expression
+
+
+    try {
+        double result = Calculator.ExSolution(input);
+        Console.WriteLine($"Result is: {result}");  
+    }
+    catch (Exception ex) {
+        Console.WriteLine($"error when calculating: {ex.Message}");
+    }
+
+    Console.WriteLine("Enter another mathematical expression or type 'exit' to exit");
 }
 
 }
 
 }
+
